@@ -4,12 +4,12 @@ import { AiFillHome, AiFillInfoCircle } from "react-icons/ai";
 import DarkModeSwitch from "./DarkModeSwitch";
 const Header = () => {
   return (
-    <div className="flex justify-between mx-5 max-w-6xl sm:mx-auto items-center py-6">
+    <div className="flex justify-between mx-2 max-w-6xl sm:mx-auto items-center py-4">
       <div className="flex">
         <MenuItems title="Home" address="/" Icon={AiFillHome} />
         <MenuItems title="About" address="/about" Icon={AiFillInfoCircle} />
       </div>
-      <div className="flex items-center space-x-5 md:mx-1">
+      <div className="flex items-center space-x-5">
         <DarkModeSwitch />
         <Link href="/">
           <h2 className="text-2xl">
