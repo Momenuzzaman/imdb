@@ -18,7 +18,7 @@ export default async function Home({ searchParams }) {
   const results = data.results;
 
   return (
-    <div className="text-red-300 font-semibold text-2xl">
+    <div>
       <Results results={results} />
     </div>
   );
