@@ -2,6 +2,11 @@ import getMovie from "@/hooks/getMovie";
 import Image from "next/image";
 import React from "react";
 
+export const metadata = {
+  title: "Movie | IMDb Clone",
+  description: "Movie detail page",
+};
+
 const MoviePage = async ({ params }) => {
   const movie = await getMovie(params.id);
 

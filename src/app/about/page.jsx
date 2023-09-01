@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "About | IMDb Clone",
+  description: "This is IMDb Clone website",
+};
 const AboutPage = () => {
   return (
     <div className="max-w-6xl mx-auto space-y-4 p-4">

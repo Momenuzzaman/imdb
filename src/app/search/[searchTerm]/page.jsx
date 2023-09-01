@@ -2,6 +2,11 @@ import Results from "@/components/Results";
 import getSearchMovie from "@/hooks/getSearchMovie";
 import React from "react";
 
+export const metadata = {
+  title: "Searching Movie | IMDb Clone",
+  description: "This is IMDb Clone website",
+};
+
 const SearchPage = async ({ params }) => {
   const data = await getSearchMovie(params);
   const results = data.results;
