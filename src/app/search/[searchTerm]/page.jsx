@@ -10,7 +10,9 @@ const SearchPage = async ({ params }) => {
       {results && results.length == 0 && (
         <h1 className="text-center pt-6"> No Movie found</h1>
       )}
-      {results && <Results results={results} />}
+      <div>
+        <Results results={results} />
+      </div>
     </div>
   );
 };
